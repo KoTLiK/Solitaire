@@ -1,0 +1,22 @@
+#contentPane {
+    -fx-background-color: #292E37;
+}
+
+.flatButton {
+    -fx-border-color: gray;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-background-color: #292E37;
+    -fx-background-insets: 0;
+    -fx-text-fill: gray;
+}
+
+.flatButton:hover {
+    -fx-border-color: #ff5400;
+    -fx-text-fill: #ff5400;
+}
+
+.flatButton:pressed { /* #be1d00 , #b23a00 */
+    -fx-border-color: orange;
+    -fx-text-fill: orange;
+}

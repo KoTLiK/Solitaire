@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="rootPane" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="680.0" prefWidth="900.0" stylesheets="@../../../resources/game.css"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="app.game.gui.GameController">
+    <HBox alignment="CENTER_LEFT" layoutX="200.0" maxHeight="30.0" prefHeight="30.0"
+          stylesheets="@../../../resources/game.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+          AnchorPane.topAnchor="0.0">
+        <Button id="new" fx:id="btn_new" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                onAction="#btn_new_click" prefHeight="30.0" prefWidth="60.0" styleClass="navBtn"
+                stylesheets="@../../../resources/game.css" text="New" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button id="save" fx:id="btn_save" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                onAction="#btn_save_click" prefHeight="30.0" prefWidth="60.0" styleClass="navBtn"
+                stylesheets="@../../../resources/game.css" text="Save" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button id="hint" fx:id="btn_hint" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                onAction="#btn_hint_click" prefHeight="30.0" prefWidth="60.0" styleClass="navBtn"
+                stylesheets="@../../../resources/game.css" text="Hint" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button id="undo" fx:id="btn_undo" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                onAction="#btn_undo_click" prefHeight="30.0" prefWidth="60.0" styleClass="navBtn"
+                stylesheets="@../../../resources/game.css" text="Undo" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <HBox fx:id="menuBox" alignment="CENTER_RIGHT" prefHeight="30.0"
+              stylesheets="@../../../resources/game.css" HBox.hgrow="ALWAYS">
+            <Label fx:id="msg_box" prefHeight="30.0" prefWidth="500.0" text="Welcome to the Solitaire 2"
+                   textFill="WHITE" HBox.hgrow="ALWAYS">
+                <HBox.margin>
+                    <Insets right="10.0"/>
+                </HBox.margin>
+            </Label>
+            <Button id="minimize" fx:id="btn_minimize" contentDisplay="GRAPHIC_ONLY" maxHeight="30.0"
+                    mnemonicParsing="false" onAction="#btn_minimize_click" prefHeight="30.0" prefWidth="30.0"
+                    stylesheets="@../../../resources/game.css" text="_">
+                <graphic>
+                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../../resources/btn_minimize.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button id="close" fx:id="btn_close" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false"
+                    onAction="#btn_close_click" prefHeight="30.0" prefWidth="30.0"
+                    stylesheets="@../../../resources/game.css" text="X">
+                <graphic>
+                    <ImageView fitHeight="18.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../../resources/btn_close.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+    </HBox>
+    <Pane id="contentPane" fx:id="contentPane" layoutX="215.0" layoutY="161.0"
+          stylesheets="@../../../resources/game.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0"/>
+</AnchorPane>
