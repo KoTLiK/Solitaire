@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Solitaire">
+    <output-path>$PROJECT_DIR$/out/artifacts/Solitaire</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="app.Solitaire" />
+        <option name="description" value="Solitaire Klondike" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="Solitaire" />
+        <option name="vendor" value="KoTLiK" />
+        <option name="version" value="1.0.0" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Solitaire.jar">
+        <element id="module-output" name="Solitaire" />
+      </element>
+    </root>
+  </artifact>
+</component>
